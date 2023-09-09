@@ -1,0 +1,41 @@
+table{
+    width:100%;
+}
+thead>tr{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+   background-color: #2499e2;
+   border:1px solid black;
+}
+tbody>tr{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    border-bottom:1px solid black; 
+ }
+
+ tbody>tr>td{
+   
+    /* background-color: blue; */
+    text-align:center;
+ }
+@media only screen and (min-width:600px){
+    .card{
+        display:none;
+    }
+}
+ @media only screen and (max-width:600px){
+    table{
+        display:none;
+    }
+    .card{
+        border-top:1px solid #2499e2;
+        border-bottom:1px solid #2499e2;
+        border-radius:10px;
+        background-color:#fff;
+        display:block;
+        background-size:cover;
+        position:relative;
+        top:150px;
+        right:0px;
+    }
+ }
